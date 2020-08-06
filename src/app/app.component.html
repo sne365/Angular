@@ -1,0 +1,17 @@
+
+<nav class="nav nav-pills navbar navbar-dark bg-primary sticky-top">
+<ul class="nav">
+<li class="nav-item"><a class="nav-link font-weight-bold" routerLink="MainCustomer" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+  true}">Customers</a></li>
+<li class="nav-item"><a class="nav-link font-weight-bold" routerLink="all-orders">Orders</a></li>
+<li class="nav-item"><a class="nav-link font-weight-bold" routerLink="/">About</a></li>
+<li class="nav-item"><a class="nav-link font-weight-bold" (click)="login()">Login</a></li>
+<li class="nav-item"><a class="nav-link font-weight-bold" (click)="logout()">Logout</a></li>
+</ul>
+<ul class="navbar-nav ml-auto"><li class="nav-item" *ngIf="toggle1"><app-user-detail></app-user-detail></li></ul>
+</nav>
+<div class="pad-top">
+  <router-outlet></router-outlet> 
+<!-- <app-navbar-details></app-navbar-details> 
+routerLinkActive="active" -->
+ </div>  

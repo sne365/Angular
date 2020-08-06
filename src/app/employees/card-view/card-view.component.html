@@ -1,0 +1,38 @@
+
+<div class="container">
+<div class="form-group" style="width:670px">
+    <div class="right-pull">
+    <input type="text" class="form-control" placeholder="Search By Name"
+            style="width:250px" [(ngModel)]="searchTerm" />
+        </div>
+ </div>
+
+<div class="table table-hover">  
+    <table>
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Full Name</th>
+        <th scope="col">Country</th>
+        <th scope="col">State</th>
+        <th scope="col">Phonenumber</th>
+        <th scope="col">MailID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employee | customerFilter:searchTerm" (click)="viewDetails(emp.id)">
+        <td>
+            <img class="imageClass rounded" [src]="emp.photoPath" />
+        </td>
+        <td class="align-middle">
+          {{emp.name}}
+        </td>
+
+        <td class="align-middle">{{emp.place}}</td>
+        <td class="align-middle">{{emp.sstate}}</td>
+        <td class="align-middle">{{emp.phoneNumber}}</td>
+        <td class="align-middle"><i>{{emp.email}}</i></td>
+      </tr>
+</tbody>
+</table>
+</div>

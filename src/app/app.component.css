@@ -1,0 +1,19 @@
+.pad-top{
+    padding-top: 30px;
+}
+.pad-bottom
+{
+    padding-bottom:10px;
+}
+.nav-pills .nav-link{
+    background-color:white;
+    color: black;
+}
+.nav-pills .nav-link:not(.active){
+    background-color:#007bff;
+    color: white;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color:white;
+    color: black;
+  }

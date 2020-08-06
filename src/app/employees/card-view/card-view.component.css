@@ -1,0 +1,19 @@
+.imageClass{
+    width:70px;
+    height:70px;
+    
+}
+
+.div1 {
+    display: inline-block;
+    padding: 5px;
+}
+ 
+.top{
+border-style: dotted;
+}
+.right-pull{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    }
