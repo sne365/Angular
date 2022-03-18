@@ -1,6 +1,6 @@
 # Angular
 
-# Customer Details Portal
+# Employee Details Portal
 
 * -Authentication and authorisation is implemented. 
 * -Authorised user can edit, updated the customer details. 
